@@ -1,0 +1,42 @@
+{
+  "name": "deviceStats",
+  "description": "Check your device abilities - net, core and some API's.",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "install-dep": "npm i",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkAlexI/deviceStats.git"
+  },
+  "keywords": [
+    "vue3"
+  ],
+  "author": "MarkAlexI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarkAlexI/deviceStats/issues"
+  },
+  "homepage": "https://github.com/MarkAlexI/deviceStats#readme",
+  "private": true,
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.45",
+    "autoprefixer": "^10.4.13",
+    "css-loader": "^6.7.2",
+    "cssnano": "5.1.14",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.7.0",
+    "postcss-loader": "^6.2.1",
+    "postcss-nested": "^6.0.0",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^17.0.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

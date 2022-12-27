@@ -1,11 +1,9 @@
 <template>
-  <h1>Choose date. Work with notes.</h1>
+  <h1>Look abilities of your device</h1>
 </template>
 
-<script>
-  export default {
-    name: 'MyHeader',
-  };
+<script setup>
+  
 </script>
 
 <style>

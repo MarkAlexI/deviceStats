@@ -1,12 +1,18 @@
 <template>
   <div>
     <h2>Info</h2>
+    <LanguagesInfo />
+    <CoreInfo />
     <button class="primary" @click="press">Press me</button>
   </div>
 </template>
 
 <script setup>
+  import LanguagesInfo from '@/LanguagesInfo';
+  import CoreInfo from '@/CoreInfo';
   const press = () => document.body.style.backgroundColor = 'red';
+  
+
 </script>
 
 <style>

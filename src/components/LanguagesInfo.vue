@@ -1,6 +1,6 @@
 <template>
   <h3>Languages used by the browser:</h3>
-  <ul v-for="(language, index) in out">
+  <ul v-for="(language, index) in browserLanguages">
     <li :key="index">{{ language }}</li>
   </ul>
 </template>
@@ -202,7 +202,7 @@
   { code: 'zu', name: 'Zulu' },
 ];
 
-const out = [...new Set(langs.map(el => ISOLanguages[ISOLanguages.findIndex(l => l.code === el.slice(0, 2))]['name']))];
+const browserLanguages = [...new Set(langs.map(el => ISOLanguages[ISOLanguages.findIndex(l => l.code === el.slice(0, 2))]['name']))];
 
 </script>
 

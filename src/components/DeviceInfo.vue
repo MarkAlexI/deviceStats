@@ -4,6 +4,7 @@
     <LanguagesInfo />
     <CoreInfo />
     <NavigatorInfo />
+    <ConnectionInfo />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
   import LanguagesInfo from '@/LanguagesInfo';
   import CoreInfo from '@/CoreInfo';
   import NavigatorInfo from '@/NavigatorInfo';
+  import ConnectionInfo from '@/ConnectionInfo';
   
 </script>
 

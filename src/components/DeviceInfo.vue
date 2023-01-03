@@ -5,6 +5,7 @@
     <CoreInfo />
     <NavigatorInfo />
     <ConnectionInfo />
+    <MemoryInfo />
   </div>
 </template>
 
@@ -13,6 +14,7 @@
   import CoreInfo from '@/CoreInfo';
   import NavigatorInfo from '@/NavigatorInfo';
   import ConnectionInfo from '@/ConnectionInfo';
+  import MemoryInfo from '@/MemoryInfo';
   
 </script>
 

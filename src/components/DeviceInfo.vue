@@ -6,6 +6,7 @@
     <NavigatorInfo />
     <ConnectionInfo />
     <MemoryInfo />
+    <PropertyInfo :header-text="textTouch" :props-array="propsTouch" />
   </div>
 </template>
 
@@ -15,7 +16,11 @@
   import NavigatorInfo from '@/NavigatorInfo';
   import ConnectionInfo from '@/ConnectionInfo';
   import MemoryInfo from '@/MemoryInfo';
+  import PropertyInfo from '@/PropertyInfo';
   
+  const textTouch = 'Only for the touch screen:';
+  const propsTouch = [['The maximum number of supported simultaneous touch points: ', 'navigator.maxTouchPoints']];
+    
 </script>
 
 <style>

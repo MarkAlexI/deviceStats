@@ -1,8 +1,12 @@
 <template>
-  <h3>Hard memory of your device:</h3>
-  <ul v-for="(state, index) in deviceMemory">
-    <li :key="index">{{ state }}</li>
-  </ul>
+  <div class="block__item">
+    <div class="block__item__wrap">
+      <h3 class="block__title">Hard memory of your device:</h3>
+      <div v-for="(state, index) in deviceMemory" class="block__list">
+        <p :key="index" class="block__content">{{ state }}</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>

@@ -16,6 +16,7 @@
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   body {
@@ -30,6 +31,15 @@
   .container {
     margin: 10px 20px;
   }
+  
+   .block__wrap {
+     max-width: 1120px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
 
   @media(min-width: 680px) {
     h1 {

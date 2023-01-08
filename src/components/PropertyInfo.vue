@@ -1,8 +1,12 @@
 <template>
-  <h3>{{ headerText }}</h3>
-  <ul v-for="(state, index) in properties">
-    <li :key="index">{{ state }}</li>
-  </ul>
+  <div class="block__item">
+    <div class="block__item__wrap">
+      <h3 class="block__title">{{ headerText }}</h3>
+      <div v-for="(state, index) in properties" class="block__list">
+        <p :key="index" class="block__content">{{ state }}</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>

@@ -1,8 +1,12 @@
 <template>
-  <h3>Main properties of browser on your device:</h3>
-  <ul v-for="(propertyInfo, index) in propNames">
-    <li :key="index">{{ propertyInfo }}</li>
-  </ul>
+  <div class="block__item">
+    <div class="block__item__wrap">
+      <h3 class="block__title">Main properties of browser on your device:</h3>
+      <div v-for="(propertyInfo, index) in propNames" class="block__list">
+        <p :key="index" class="block__content">{{ propertyInfo }}</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>

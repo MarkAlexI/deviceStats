@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <h2>Info</h2>
+  <div class="block__wrap">
     <LanguagesInfo />
     <CoreInfo />
     <NavigatorInfo />
@@ -24,22 +23,32 @@
 </script>
 
 <style>
-  h2 {
-    font-size: 1.5rem;
-    color: mediumpurple;
-    padding-bottom: 8px;
-  }
-  
-  button {
-    display: block;
-    color: darkblue;
-    outline: none;
-    font-size: 20px;
-    padding: 10px 50px;
-  
-    &.primary {
-      border-color: black;
-      background-color: yellow;
-    }
-  }
+ .block__item {
+   flex: 1;
+   min-width: 20rem;
+   max-width: 24rem;
+   padding: 10px;
+ }
+ .block__item__wrap {
+    background: #F7F7F2;
+    position: relative;
+ }
+ .block__item__wrap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #C9F2C7;
+    transform: rotate(1deg);
+    transform-origin: left bottom;
+    transition: .3s ease-in-out;
+ }
+ .block__item__wrap:hover:after {
+    top: 5px;
+    left: 5px;
+    transform: rotate(2deg);
+ }
 </style>

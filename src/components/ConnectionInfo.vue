@@ -20,16 +20,17 @@
 
   const getNetworkInfo = () => {
     browserConnection = [
-      ['Type of network connection: ', 'navigator.connection.type'],
-      ['Downlink (Mb/s): ', 'navigator.connection.downlink'],
-      ['Downlink maximum (Mb/s): ', 'navigator.connection.downlinkMax'],
-      ['Effective round-trip time estimate (ms): ', 'navigator.connection.rtt'],
-      ['Effective connection type: ', 'navigator.connection.effectiveType'],
-      ['Now are saving data? ', 'navigator.connection.saveData']
+      ['Your browser is now online: ', 'navigator.onLine'],
+      ['Type of network connection: ', 'navigator.connection?.type'],
+      ['Downlink (Mb/s): ', 'navigator.connection?.downlink'],
+      ['Downlink maximum (Mb/s): ', 'navigator.connection?.downlinkMax'],
+      ['Effective round-trip time estimate (ms): ', 'navigator.connection?.rtt'],
+      ['Effective connection type: ', 'navigator.connection?.effectiveType'],
+      ['Now are saving data? ', 'navigator.connection?.saveData']
     ].map(([descr, prop]) => getProperty(descr, prop));
   }
 
-  navigator.connection.addEventListener('change', getNetworkInfo);
+  navigator.connection?.addEventListener('change', getNetworkInfo);
 
   getNetworkInfo();
 </script>

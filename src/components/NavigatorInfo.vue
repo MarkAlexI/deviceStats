@@ -17,10 +17,11 @@
   };
 
   const propNames = [
-    ['€¥^: ', 'navigator.ui'],
+    ['Navigator do not track user actions: ', 'navigator.doNotTrack'],
     ['Your browser: ', 'navigator.appName'],
     ['Browser version: ', 'navigator.appVersion'],
     ['Code name of browser: ', 'navigator.appCodeName'],
+    ['Current OSCPU: ', 'navigator.oscpu'],
     ['Platform: ', 'navigator.platform'],
     ['Cookie enabled: ', 'navigator.cookieEnabled'],
     ['UserAgent: ', 'navigator.userAgent']
